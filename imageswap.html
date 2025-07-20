@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width:device-width;initial-scale:1.0">
+        <title>Image Swap</title>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+        .bg{
+            
+           display:inline-block;
+           text-align: center;
+           width:50%;
+           color:rgb(255, 213, 0);
+           padding-top: 20px;
+           height: 100vh;
+           background-image: url("https://cdn.siasat.com/wp-content/uploads/2023/04/Ajinkya-rahane.png");
+           background-repeat: no-repeat;
+           background-size: cover;
+
+            
+        }
+
+       
+        
+        .gb{
+            display:inline-block;
+           width:49%;
+           height: 100vh;
+                      color:rgb(31, 234, 4);
+
+                      padding-top: 20px;
+
+                      text-align: center;
+
+           background-image: url("https://library.sportingnews.com/styles/crop_style_16_9_desktop/s3/2021-08/cheteshwar-pujara_c6dyizn0f8ja1jg7swdacxzah.jpg?itok=tf93SRMI");
+           background-repeat: no-repeat;
+           background-size: cover;
+
+        }
+
+        .ar2{
+            width:200px;
+            cursor:pointer;
+            height:50px;
+            background-color: rgb(255, 0, 0);    
+            border-radius:10px;
+            color:yellow    ;
+            font-size: 1.2em;
+            }
+            
+        .cp2{
+            width:200px;
+            cursor:pointer;
+            height:50px;
+            background-color: rgb(0, 89, 255);    
+            border-radius:10px;
+            color:yellow    ;
+            font-size: 1.2em;
+            }
+</style>
+    </head>
+    <body>
+        <div class="bg" id="bg">
+            <h1 id="ar">Ajinkya Rahane</h1>
+            <h1 id="ar1">0</h1>
+            <button id="ar2" class="ar2">Ajinkya Rahane</button>
+        </div>
+        <div class="gb" id="gb">
+            <h1 id="cp">Cheteshwar Pujara</h1>
+            <h1 id="cp1">0</h1>
+            <button id="cp2" class="cp2">Cheteshwar Pujara</button>
+        </div>
+
+    <script>
+        let a=0
+        let b=0
+        let c="Ajinkya Rahane"
+        let d="Cheteshwar Pujara"
+        let y=document.getElementById('ar2')
+        let z=document.getElementById('cp2')
+        let g=document.getElementById('bg')
+        let h=document.getElementById('gb')
+
+        document.getElementById('ar2').onclick=function()
+        {
+            a=a+1
+            document.getElementById('ar1').innerHTML=a;
+            update()
+        }
+
+        
+        document.getElementById('cp2').onclick=function()
+        {
+            b=b+1
+            document.getElementById('cp1').innerHTML=b;
+            update()
+        }
+
+       function update()
+       {
+        if(b>a)
+       {
+        document.getElementById('bg').innerHTML=h;
+        document.getElementById('gb').innerHTML=g;
+
+      ///  document.getElementById('ar').innerHTML=d;
+      ///  document.getElementById('cp').innerHTML=c;
+      ///  document.getElementById('ar1').innerHTML=b;
+      ///  document.getElementById('cp1').innerHTML=a;
+      ///  document.getElementById('ar2').innerHTML=d;
+      ///  document.getElementById('cp2').innerHTML=c;
+
+       }
+
+       else
+      {
+       /// document.getElementById('ar').innerHTML=c;
+       /// document.getElementById('cp').innerHTML=d;
+      ///  document.getElementById('ar1').innerHTML=a;
+      ///  document.getElementById('cp1').innerHTML=b;
+       /// document.getElementById('ar2').innerHTML=d;
+      ///  document.getElementById('cp2').innerHTML=c;
+       
+       }
+       } 
+    </script>
+    </body>
+</html>

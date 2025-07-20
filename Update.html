@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update Score</title>
+    <style>
+     th{
+        font-size:2em
+     }
+
+     button{
+        font-size:1.5em;
+     }
+    </style>
+
+    </head>
+    <body>
+        <div>
+        <h1 style="text-align:center">Score Card</h1>
+        <form>
+            <table>
+                <tr id="Ar">
+                    <th id="a">Ajinkya Rahane :</th>
+                    <th id="p1">0</th>
+                </tr>
+                <tr id="cp">
+                    <th id="c">Cheteshwar Pujara :  </th>
+                    <th id="p2">0</th>
+                </tr>
+
+             
+            </table>
+        </form>
+        <button height="50px" width="100px" id="jinx">Ajinkya Rahane</button>
+        <button height="50px" width="100px" id="pujji">Cheteshwar Pujara</button>
+        </div>
+
+        
+        <script>
+            let r=0
+            let s=0
+            let y="Ajinkya Rahane"
+            let x="Cheteshwar Pujara"
+
+
+            document.getElementById('jinx').onclick=function()
+            {
+                r=r+1;
+                document.getElementById('p1').innerHTML=r;
+              
+                updatescore();
+
+            }
+
+              document.getElementById('pujji').onclick=function()
+            {
+                s=s+1
+                document.getElementById('p2').innerHTML=s;
+
+                                updatescore();
+
+            }
+
+            function updatescore()
+            {
+                if(s>r)
+            {
+                document.getElementById('a').innerHTML=x;
+                document.getElementById('p1').innerHTML=s;
+                document.getElementById('c').innerHTML=y;
+                document.getElementById('p2').innerHTML=r;
+
+            }
+            else
+
+             {
+                document.getElementById('a').innerHTML=y;
+                document.getElementById('p1').innerHTML=r;
+                document.getElementById('c').innerHTML=x;
+                document.getElementById('p2').innerHTML=s;
+
+            }
+            }
+        updatescore();
+        </script>
+
+    </body>
+</html>
