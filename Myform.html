@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="form.css">
+    <title>
+        My Form
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+   <script>
+    function show()
+    {
+        document.getelementbyid('phone').style.display='Block';
+    }
+    function hide()
+    {
+        documnet.getelementbyid('phone').style.display='None';
+    }
+   </script>
+
+<script> 
+    function show(){ 
+    document.getElementById('phone').style.display='block'; 
+    } 
+    function hide(){ 
+    document.getElementById('phone').style.display='none'; 
+    } 
+    </script> */
+</head>
+
+<body class="bg-success" style="text-align:center">
+    <h1>My Form</h1>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+    </div>
+    <div style="margin-top:20px">
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd">
+    </div>
+    <div style="margin-top:20px">
+        <label for="sex">Gender</label>
+        <input type=radio id="sex" name="sex" value="M" checked>Male
+        <input type=radio id="sex" name="sex" value="F">Female
+    </div>
+    <div style="margin-top:20px">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" size="50">
+    </div>
+    <div style="margin-top:20px">
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+    </div>
+    <div style="margin-top:20px">
+        <label for="birth">DOB</label>
+        <input type="date" id="birth" name="dob">
+    </div>
+    <div style="margin-top:20px">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time">
+    </div>
+
+
+    <div style="margin-top:20px">
+        <label for="re">Regilious</label>
+        <select name="religion" size="1" id="re">
+            <option name="hindu" selected>Hindu</option>
+            <option name="muslim">Muslim</option>
+            <option value="Christian">Christian</option>
+        </select>
+    </div>
+
+    <div style="margin-top:20px">
+        <label >Interest</label>
+        <input type="checkbox"  name="Interest"  >Music
+        <input type="checkbox" name="Interet"> Sports
+
+    </div>
+    <div style="margin-top:20px">
+        <label for="S">Suggestion</label>
+        <textarea col="60" row="10" ></textarea>
+</div>
+
+<div  style="margin-top:20px">
+ <h1 onmouseover="show()" onmouseout="hide()">Contact as</h1>
+ 
+</div>
+
+<div id="phone" class="d-none">
+    <p>9025754909</p>
+</div>
+
+</body>
+
+</html>
+
+
+
